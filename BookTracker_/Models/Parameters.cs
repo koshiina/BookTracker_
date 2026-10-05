@@ -2,7 +2,7 @@
 
 namespace BookTracker_.Models
 {
-    public class Parameterscs
+    public class Parameters
     {
         [Required]
         public string Name { get; set; } = null!;
