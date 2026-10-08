@@ -17,6 +17,10 @@ namespace BookTracker_.Controllers
         {
             return View();
         }
+        public IActionResult AddNewBook()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

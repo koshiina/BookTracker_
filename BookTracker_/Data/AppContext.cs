@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-//using Parameters.Model;
+using BookTracker_.Models;
 
 namespace BookTracker_.Data
 {
-    public class AppContext
+    public class AppContext : DbContext
     {
+        public AppContext(DbContextOptions<AppContext> options) : base(options);
+        public DbContext
     }
 }

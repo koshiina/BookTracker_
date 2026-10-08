@@ -12,7 +12,7 @@ namespace BookTracker_.Models
         public int PageCount { get; set; }
         [Required]
         public DateTime StartDate { get; set; } = DateTime.Now;
-        [Required]
-        public DateTime EndDate { get; set; } = DateTime.Today;
+        //[Required]
+        //public DateTime EndDate { get; set; } = DateTime.Today;
     }
 }
