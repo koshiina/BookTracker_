@@ -6,6 +6,6 @@ namespace BookTracker_.Data
     public class AppContext : DbContext
     {
         public AppContext(DbContextOptions<AppContext> options) : base(options);
-        public DbContext
+        public DbSet<Parameters> Parameters { get; set; }
     }
 }
