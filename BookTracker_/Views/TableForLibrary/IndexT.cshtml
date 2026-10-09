@@ -1,0 +1,29 @@
+﻿@model IEnumerable<BookTracker_.Models.Parameters>
+
+<body style="background-color:blanchedalmond;">
+<h2>My Books</h2>
+
+<div class="container">
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>PageCount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Author</td>
+            <td>@item.PageCount</td>
+            <td>@item.StartDate.ToString("dd-MM-yyyy")</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>
+</body>

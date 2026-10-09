@@ -5,7 +5,7 @@ namespace BookTracker_.Models
     public class Parameters
     {
         [Required]
-        public string Name { get; set; } = null!;
+        public string Title{ get; set; } = null!;
         [Required]
         public string Author { get; set; } = null!;
         [Required]
