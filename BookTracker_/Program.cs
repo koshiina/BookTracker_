@@ -1,12 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using BookTracker_.Data;
+using BookTracker_.Models;
 //using App.Data
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppContext>(options =>
+builder.Services.AddDbContext<AppContextB>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
 var app = builder.Build();
