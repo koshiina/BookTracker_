@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace BookTracker_.Models
-{
+{//cia yra strong type in EF, mes is pradziu kuriam parametrus
+ //sql lentelems, panaudojus kurias veliau panaudosim kuriant sql lentele(?)
     public class Parameters
     {
         [Required]
