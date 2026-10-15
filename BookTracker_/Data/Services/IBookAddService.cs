@@ -4,7 +4,7 @@ namespace BookTracker_.Data.Services
     public interface IBookAddService
     {
         Task<IEnumerable<Parameters>> GetAll();
-        Task AddBook(Parameters parameters);
+        Task Add(Parameters parameters);
 
     }
 }

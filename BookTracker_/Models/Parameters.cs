@@ -5,6 +5,7 @@ namespace BookTracker_.Models
  //sql lentelems, panaudojus kurias veliau panaudosim kuriant sql lentele(?)
     public class Parameters
     {
+        public int ID { get; set; } // ig you need int as id in order for migration to work
         [Required]
         public string Title{ get; set; } = null!;
         [Required]
